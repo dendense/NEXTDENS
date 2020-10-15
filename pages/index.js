@@ -1,35 +1,34 @@
 import React from "react";
-import Head from "next/head";
-import Nav from "../components/nav";
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
-      />
+import Layout from "../components/Layout";
 
-      {/* UIKit JS */}
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
-    </Head>
-
-    <Nav />
-
-    <div>
-      <div className="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 className="uk-card-title">Default</h3>
+function Home() {
+  return (
+    <Layout title="Home">
+      <div class="uk-column-1-2">
         <p>
-          Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore.
         </p>
       </div>
-    </div>
-  </div>
-);
+    </Layout>
+  );
+}
 
 export default Home;
