@@ -6,21 +6,27 @@ import Nav from "./parts/Nav";
 import Footer from "./parts/Footer";
 
 const Layout = ({ title, children }) => (
-  <div>
+  <div id="pageContainer">
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
+      <link rel="stylesheet" href="css/uikit.min.css" />
+      {/* Google Analytics & Webmastertools Here */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                <code snippet goes here>
+              `,
+        }}
       />
-
       {/* UIKit JS */}
       <script src="js/uikit.min.js"></script>
       <script src="js/uikit-icons.min.js"></script>
     </Head>
     <Nav />
-    <div className="uk-container">{children}</div>
+    <div className="uk-container" id="contentWrap">
+      {children}
+    </div>
     <Footer />
   </div>
 );

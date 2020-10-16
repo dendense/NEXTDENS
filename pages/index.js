@@ -1,11 +1,12 @@
 import React from "react";
 
+import Button from "../components/elements/Button";
 import Layout from "../components/Layout";
 
 function Home() {
   return (
     <Layout title="Home">
-      <div class="uk-column-1-2">
+      <div className="uk-column-1-2">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -26,6 +27,9 @@ function Home() {
           pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore.
         </p>
+        <Button href="https://google.com" isSecondary>
+          Click Here
+        </Button>
       </div>
     </Layout>
   );
