@@ -1,5 +1,5 @@
 //Import Section
-import "../styles/index.scss";
+import "../components/styles/index.scss";
 
 // Export Default App
 export default function MyNextApp({ Component, pageProps }) {
