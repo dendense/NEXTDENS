@@ -2,19 +2,20 @@ import Link from "next/link";
 
 const Nav = () => (
   <nav className="uk-navbar-container uk-margin" uk-navbar="mode: click">
-    <div className="uk-navbar-left">
+    {/* Navbar Expand */}
+    <div className="uk-navbar-left uk-visible@m">
       <a className="uk-navbar-item uk-logo" href="/">
-        NEXTDENSE
+        EMACO
       </a>
       <ul className="uk-navbar-nav">
         <li className="uk-active">
-          <Link href="/bio">BIO</Link>
+          <Link href="/bio">ABOUT</Link>
         </li>
         <li>
-          <Link href="/project">PROJECT</Link>
+          <Link href="/project">PRODUCT</Link>
         </li>
         <li>
-          <Link href="/login">SIGN IN</Link>
+          <Link href="/login">CONTACT US</Link>
         </li>
       </ul>
     </div>

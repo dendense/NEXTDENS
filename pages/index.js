@@ -4,30 +4,35 @@ import Layout from "../components/Layout";
 function Home() {
   return (
     <Layout title="Home">
-      <div className="uk-column-1-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris.
-        </p>
+      <div
+        className="uk-position-relative uk-visible-toggle uk-light"
+        tabIndex="-1"
+        uk-slideshow="ratio: 7:3; animation: push"
+      >
+        <ul className="uk-slideshow-items">
+          <li>
+            <img src="images/photo.jpg" alt="" uk-cover="true" />
+          </li>
+          <li>
+            <img src="images/dark.jpg" alt="" uk-cover="true" />
+          </li>
+          <li>
+            <img src="images/light.jpg" alt="" uk-cover="true" />
+          </li>
+        </ul>
 
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-        </p>
-        <Button href="https://google.com" isSecondary>
-          Click Here
-        </Button>
+        <a
+          className="uk-position-center-left uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-previous="true"
+          uk-slideshow-item="previous"
+        ></a>
+        <a
+          className="uk-position-center-right uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-next="true"
+          uk-slideshow-item="next"
+        ></a>
       </div>
     </Layout>
   );

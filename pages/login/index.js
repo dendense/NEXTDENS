@@ -1,12 +1,11 @@
-import Head from "next/head";
+import Layout from "../../components/Layout";
 
 export default function Login() {
   return (
-    <div>
-      <Head>
-        <title>Sign In</title>
-      </Head>
-      <Nav />
-    </div>
+    <Layout title="Sign In">
+      <div className="uk-container">
+        <h1>Anumas</h1>
+      </div>
+    </Layout>
   );
 }
