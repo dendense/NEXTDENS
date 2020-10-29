@@ -23,9 +23,7 @@ const Layout = ({ title, children }) => (
       <script src="js/uikit-icons.js"></script>
     </Head>
     <Nav />
-    <div className="uk-container" id="contentWrap">
-      {children}
-    </div>
+    <div id="contentWrap">{children}</div>
     <Footer />
   </div>
 );

@@ -7,7 +7,7 @@ function Home() {
       <div
         className="uk-position-relative uk-visible-toggle uk-light"
         tabIndex="-1"
-        uk-slideshow="ratio: 7:3; animation: push"
+        uk-slideshow="min-height: 300; max-height: 500"
       >
         <ul className="uk-slideshow-items">
           <li>
