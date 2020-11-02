@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "_id": 1,
+            "product_name": "Wolfgang Bags",
+            "type": "Medium",
+            "hot_items": true,
+            "imageUrl": "images/prod1.jpg",
+            "alt": "Wolfgang Bags",
+            "price": 150000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            "_id": 2,
+            "product_name": "Hunterbrew Bags",
+            "type": "Pocket",
+            "hot_items": true,
+            "imageUrl": "images/prod2.jpg",
+            "alt": "Hunterbrew Bags",
+            "price": 100000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            "_id": 3,
+            "product_name": "Mollybay Bags",
+            "type": "Pocket",
+            "hot_items": true,
+            "imageUrl": "images/prod3.jpg",
+            "alt": "Mollybay Bags",
+            "price": 80000,
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        }
+    ]
+}

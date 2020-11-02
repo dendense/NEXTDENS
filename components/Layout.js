@@ -5,7 +5,7 @@ import Nav from "./parts/Nav";
 import Footer from "./parts/Footer";
 
 const Layout = ({ title, children }) => (
-  <div id="pageContainer">
+  <div>
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
@@ -23,7 +23,7 @@ const Layout = ({ title, children }) => (
       <script src="js/uikit-icons.js"></script>
     </Head>
     <Nav />
-    <div id="contentWrap">{children}</div>
+    <div>{children}</div>
     <Footer />
   </div>
 );
