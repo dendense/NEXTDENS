@@ -1,4 +1,3 @@
-import Button from "../components/elements/Button";
 import Layout from "../components/Layout";
 import Slideshow from "../components/parts/Slideshow";
 import BatchPosts from "../components/product/Batch";
