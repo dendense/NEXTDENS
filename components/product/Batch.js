@@ -15,6 +15,7 @@ export default function BatchPosts({ data }) {
                 imageUrl={item.imageUrl}
                 alt={item.alt}
                 desc={item.desc}
+                price={item.price}
               />
             );
           })}
