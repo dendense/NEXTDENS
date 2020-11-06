@@ -1,4 +1,18 @@
 {
+    "banner": [
+        {
+            "_id": 1,
+            "imageUrl": "images/prod1.jpg",
+            "button": "How to Order",
+            "link": "/help/how-to-order"
+        },
+        {
+            "_id": 2,
+            "imageUrl": "images/prod2.jpg",
+            "button": "How to Order",
+            "link": "/help/how-to-order"
+        }
+    ],
     "posts": [
         {
             "_id": 1,
