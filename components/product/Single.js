@@ -14,7 +14,7 @@ const SinglePost = ({ _id, product_name, imageUrl, desc, alt }) => (
       <p>{desc}</p>
     </div>
     <div className="uk-card-footer">
-      <a href="#" class="uk-button uk-button-text">
+      <a href="#" className="uk-button uk-button-text">
         Details
       </a>
     </div>
