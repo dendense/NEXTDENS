@@ -9,7 +9,7 @@
         {
             "_id": 2,
             "imageUrl": "images/prod2.jpg",
-            "button": "How to Order",
+            "button": "Sale Event",
             "link": "/help/how-to-order"
         }
     ],
