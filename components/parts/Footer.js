@@ -3,10 +3,7 @@ import Link from "next/link";
 import Button from "../elements/Button";
 
 const Footer = () => (
-  <div
-    className="uk-section uk-section-secondary uk-light"
-    id="footerContainer"
-  >
+  <div className="uk-section uk-section-secondary uk-light">
     <div className="uk-container">
       <h3>Related Links</h3>
       <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>

@@ -1,34 +1,16 @@
-import Button from "../components/elements/Button";
 import Layout from "../components/Layout";
+import Slideshow from "../components/parts/Slideshow";
+import BatchPosts from "../components/product/Batch";
+import MiniBanner from "../components/parts/MinBanner";
+
+import Posts from "./Posts.json";
 
 function Home() {
   return (
     <Layout title="Home">
-      <div className="uk-column-1-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris.
-        </p>
-
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-        </p>
-        <Button href="https://google.com" isSecondary>
-          Click Here
-        </Button>
-      </div>
+      <Slideshow />
+      <BatchPosts data={Posts.posts} />
+      <MiniBanner data={Posts.banner} />
     </Layout>
   );
 }
